@@ -56,7 +56,7 @@ const Cart = () => {
               Your cart is empty
             </h2>
             <p className="text-chocolate-primary/70 text-base sm:text-lg mb-8 max-w-md mx-auto">
-              Looks like you haven't added any delicious chocolates to your cart yet. 
+              Looks like you haven't added any delicious dishes to your cart yet. 
               Let's fix that!
             </p>
             <Link to="/products">

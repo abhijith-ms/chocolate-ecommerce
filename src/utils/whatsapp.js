@@ -49,7 +49,7 @@ export const formatCartCheckoutMessage = (cartItems, total) => {
 
   const itemCount = cartItems.reduce((count, item) => count + item.quantity, 0);
 
-  return `Hello! I'd like to order the following chocolates:
+  return `Hello! I'd like to order the following dishes:
 
 ${itemsList}
 

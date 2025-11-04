@@ -55,10 +55,10 @@ const Products = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
           <div className="text-center mb-6 sm:mb-8">
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-chocolate-primary mb-3 sm:mb-4">
-              Our Premium Collection
+              Our International Menu
             </h1>
             <p className="text-base sm:text-lg text-chocolate-primary/80 max-w-2xl mx-auto">
-              Discover our handcrafted chocolates, each piece made with passion and the finest ingredients
+              Discover our authentic international dishes, each recipe crafted with passion and the finest ingredients
             </p>
           </div>
 
@@ -69,7 +69,7 @@ const Products = () => {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-chocolate-primary/50 h-5 w-5" />
               <Input
                 type="text"
-                placeholder="Search chocolates..."
+                placeholder="Search dishes..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10 pr-4 py-3 w-full border-chocolate-primary/20 focus:border-chocolate-accent"

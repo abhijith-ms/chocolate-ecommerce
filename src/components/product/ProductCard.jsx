@@ -38,12 +38,24 @@ const ProductCard = ({ product, onViewDetails }) => {
     >
       {/* Product Image */}
       <div className="relative aspect-square bg-gradient-to-br from-chocolate-secondary to-chocolate-accent/20 overflow-hidden">
-        {/* Placeholder for product image */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 bg-chocolate-accent rounded-full flex items-center justify-center shadow-lg">
-            <span className="text-chocolate-primary font-bold text-xl sm:text-2xl">
-              {product.name.charAt(0)}
-            </span>
+        {/* Product image with fallback */}
+        <div className="absolute inset-0">
+          <img
+            src={product.image}
+            alt={product.name}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              // Fallback to placeholder circle if image fails to load
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'flex';
+            }}
+          />
+          <div className="w-full h-full bg-gradient-to-br from-chocolate-secondary to-chocolate-accent/20 flex items-center justify-center" style={{display: 'none'}}>
+            <div className="w-16 h-16 sm:w-20 sm:h-20 bg-chocolate-accent rounded-full flex items-center justify-center shadow-lg">
+              <span className="text-chocolate-primary font-bold text-xl sm:text-2xl">
+                {product.name.charAt(0)}
+              </span>
+            </div>
           </div>
         </div>
         

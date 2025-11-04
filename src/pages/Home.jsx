@@ -25,11 +25,11 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6">
-            Indulge in Luxury Chocolates
+            Savor Authentic International Cuisine
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-            Discover our exquisite collection of handcrafted premium chocolates, 
-            made with the finest ingredients and crafted with passion.
+            Discover our exquisite collection of handcrafted international dishes, 
+            made with the finest ingredients and traditional recipes from around the world.
           </p>
           <Link to="/products">
             <Button size="lg" className="bg-chocolate-accent hover:bg-chocolate-accent/90 text-chocolate-primary font-semibold px-8 py-4 text-lg">
@@ -44,10 +44,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-chocolate-primary mb-4">
-              Featured Chocolates
+              Featured Dishes
             </h2>
             <p className="text-lg text-chocolate-primary/80 max-w-2xl mx-auto">
-              Handpicked selections from our premium collection
+              Handpicked selections from our international menu
             </p>
           </div>
 
@@ -102,14 +102,14 @@ const Home = () => {
                 Crafted with Passion
               </h2>
               <p className="text-lg text-chocolate-primary/80 mb-6">
-                At ChocoluxE, we believe that chocolate is more than just a treat—it's an experience. 
-                Each piece is carefully crafted using traditional techniques and the finest ingredients 
+                At Ali & Company, we believe that food is more than just sustenance—it's a journey. 
+                Each dish is carefully crafted using traditional techniques and the finest ingredients 
                 sourced from around the world.
               </p>
               <p className="text-lg text-chocolate-primary/80 mb-8">
-                From our workshop in Bahrain, we create chocolates that tell a story of luxury, 
-                quality, and passion. Every bite is designed to transport you to a world of 
-                indulgence and delight.
+                From our kitchen in Bahrain, we create dishes that tell a story of culture, 
+                tradition, and passion. Every bite is designed to transport you to different 
+                corners of the world through authentic flavors.
               </p>
               <Link to="/about">
                 <Button variant="outline" className="border-chocolate-accent text-chocolate-accent hover:bg-chocolate-accent hover:text-chocolate-primary">
@@ -125,8 +125,8 @@ const Home = () => {
                 Made with Love
               </h3>
               <p className="text-chocolate-primary/80">
-                Every chocolate is handcrafted with care and attention to detail, 
-                ensuring the perfect balance of flavor and texture.
+                Every dish is handcrafted with care and attention to detail, 
+                ensuring the perfect balance of authentic flavors and textures.
               </p>
             </div>
           </div>

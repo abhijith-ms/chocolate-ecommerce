@@ -30,10 +30,10 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-chocolate-accent rounded-full flex items-center justify-center">
-              <span className="text-chocolate-primary font-bold text-lg">C</span>
+              <span className="text-chocolate-primary font-bold text-lg">A</span>
             </div>
             <span className="font-serif text-xl font-bold text-chocolate-primary">
-              ChocoluxE
+              Ali & Company
             </span>
           </Link>
 

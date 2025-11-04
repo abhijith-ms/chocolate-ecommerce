@@ -94,7 +94,7 @@ const AdminForm = ({ product, onCancel, mode = 'create' }) => {
     }
   };
 
-  const categories = ['Truffles', 'Pralines', 'Bars', 'Specialty', 'Gift Sets', 'Seasonal'];
+  const categories = ['Mediterranean', 'Asian', 'Latin American', 'Main Course', 'Snacks', 'Appetizers', 'Desserts'];
 
   return (
     <motion.div
@@ -126,7 +126,7 @@ const AdminForm = ({ product, onCancel, mode = 'create' }) => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="e.g., Belgian Dark Chocolate Truffle"
+              placeholder="e.g., Dolma (Stuffed Grape Leaves)"
               className="mt-1"
               required
             />
@@ -197,7 +197,7 @@ const AdminForm = ({ product, onCancel, mode = 'create' }) => {
             name="description"
             value={formData.description}
             onChange={handleChange}
-            placeholder="Describe the chocolate's flavor, texture, and special qualities..."
+            placeholder="Describe the dish's flavor, ingredients, and special qualities..."
             rows={4}
             className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-chocolate-accent focus:border-transparent resize-none"
             required

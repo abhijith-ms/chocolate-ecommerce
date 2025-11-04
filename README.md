@@ -1,15 +1,15 @@
-# ChocoluxE - Premium Chocolate eCommerce
+# Ali & Company - International Cuisine eCommerce
 
-A luxury chocolate eCommerce website built with React, featuring WhatsApp integration for seamless ordering.
+An authentic international cuisine eCommerce website built with React, featuring WhatsApp integration for seamless ordering.
 
-## 🍫 Features
+## 🍽️ Features
 
-- **Premium Product Catalog** - Browse our handcrafted chocolate collection
+- **International Menu** - Browse our handcrafted international dishes
 - **Mobile-First Design** - Optimized for smartphone users
 - **WhatsApp Integration** - Direct ordering via WhatsApp (+91 9895905758)
 - **Shopping Cart** - Full cart management with quantity controls
 - **Responsive Design** - Works perfectly on all devices
-- **Search & Filter** - Find chocolates by name or category
+- **Search & Filter** - Find dishes by name or category
 - **Smooth Animations** - Enhanced user experience with Framer Motion
 
 ## 🛠️ Tech Stack
@@ -40,7 +40,7 @@ A luxury chocolate eCommerce website built with React, featuring WhatsApp integr
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/abhijith-ms/chocolate-ecommerce.git
 cd chocolate-ecommerce
 ```
 
@@ -91,9 +91,9 @@ The build artifacts will be stored in the `dist/` directory.
 ## 📧 Contact
 
 - **WhatsApp**: +91 98959 05758
-- **Email**: info@chocoluxe.com
+- **Email**: info@alicompany.com
 - **Location**: Manama, Bahrain
 
 ---
 
-Made with ❤️ for chocolate lovers everywhere
+Made with ❤️ for food lovers everywhere

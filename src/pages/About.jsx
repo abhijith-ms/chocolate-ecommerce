@@ -8,7 +8,7 @@ const About = () => {
     {
       icon: Heart,
       title: 'Made with Love',
-      description: 'Every chocolate is handcrafted with passion and attention to detail, ensuring the perfect balance of flavor and texture.'
+      description: 'Every dish is handcrafted with passion and attention to detail, ensuring the perfect balance of authentic flavors and textures.'
     },
     {
       icon: Award,
@@ -76,23 +76,23 @@ const About = () => {
               transition={{ duration: 0.8 }}
             >
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-chocolate-primary mb-6">
-                The ChocoluxE Journey
+                The Ali & Company Journey
               </h2>
               <div className="space-y-4 text-chocolate-primary/80 text-base sm:text-lg leading-relaxed">
                 <p>
-                  Born from a passion for exceptional chocolate, ChocoluxE began as a dream to bring 
-                  the world's finest cocoa experiences to chocolate lovers everywhere. Our journey 
+                  Born from a passion for authentic international cuisine, Ali & Company began as a dream to bring 
+                  the world's finest culinary experiences to food lovers everywhere. Our journey 
                   started in the heart of Bahrain, where tradition meets innovation.
                 </p>
                 <p>
-                  Every piece in our collection tells a story of craftsmanship, quality, and dedication. 
-                  We believe that chocolate is more than just a treat—it's a moment of pure indulgence, 
-                  a celebration of life's sweetest pleasures.
+                  Every dish in our collection tells a story of craftsmanship, quality, and cultural heritage. 
+                  We believe that food is more than just sustenance—it's a moment of pure connection, 
+                  a celebration of life's most cherished traditions.
                 </p>
                 <p>
-                  From selecting the finest cacao beans to the final packaging, every step is carefully 
-                  orchestrated to ensure that each bite delivers an unforgettable experience. Our 
-                  commitment to excellence has made us a trusted name among chocolate connoisseurs.
+                  From selecting the finest ingredients to the final presentation, every step is carefully 
+                  orchestrated to ensure that each bite delivers an authentic experience. Our 
+                  commitment to excellence has made us a trusted name among food enthusiasts.
                 </p>
               </div>
             </motion.div>
@@ -110,8 +110,8 @@ const About = () => {
                 Our Mission
               </h3>
               <p className="text-chocolate-primary/80 text-lg">
-                To create extraordinary chocolate experiences that bring joy, celebrate special moments, 
-                and connect people through the universal language of sweetness.
+                To create extraordinary culinary experiences that bring joy, celebrate cultural diversity, 
+                and connect people through the universal language of authentic flavors.
               </p>
             </motion.div>
           </div>
@@ -131,7 +131,7 @@ const About = () => {
               What Makes Us Special
             </h2>
             <p className="text-chocolate-primary/80 text-lg max-w-2xl mx-auto">
-              Our commitment to excellence shines through in every aspect of our chocolate creation process
+              Our commitment to excellence shines through in every aspect of our culinary creation process
             </p>
           </motion.div>
 
@@ -172,7 +172,7 @@ const About = () => {
               Get in Touch
             </h2>
             <p className="text-chocolate-primary/80 text-lg max-w-2xl mx-auto">
-              Have questions about our chocolates or want to place a custom order? We'd love to hear from you!
+              Have questions about our dishes or want to place a custom order? We'd love to hear from you!
             </p>
           </motion.div>
 
@@ -223,7 +223,7 @@ const About = () => {
               Ready to Indulge?
             </h3>
             <p className="text-gray-200 text-lg mb-8 max-w-2xl mx-auto">
-              Explore our premium chocolate collection and treat yourself to something extraordinary today.
+              Explore our international menu and treat yourself to authentic flavors from around the world today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
