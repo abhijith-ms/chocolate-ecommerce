@@ -52,18 +52,18 @@ const CartItem = ({ item }) => {
                 <span className="bg-chocolate-secondary px-2 py-1 rounded-full text-xs">
                   {item.product.category}
                 </span>
-                <span>₹{item.product.price} each</span>
+                <span>BD {item.product.price} each</span>
               </div>
             </div>
 
             {/* Price */}
             <div className="text-right">
               <div className="font-bold text-xl sm:text-2xl text-chocolate-accent">
-                ₹{itemTotal}
+                BD {itemTotal.toFixed(2)}
               </div>
               {item.quantity > 1 && (
                 <div className="text-sm text-chocolate-primary/60">
-                  {item.quantity} × ₹{item.product.price}
+                  {item.quantity} × BD {item.product.price}
                 </div>
               )}
             </div>

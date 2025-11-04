@@ -54,11 +54,23 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredProducts.map((product) => (
               <div key={product.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="aspect-square bg-gradient-to-br from-chocolate-secondary to-chocolate-accent/20 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-chocolate-accent rounded-full flex items-center justify-center">
-                    <span className="text-chocolate-primary font-bold text-xl">
-                      {product.name.charAt(0)}
-                    </span>
+                <div className="aspect-square bg-gradient-to-br from-chocolate-secondary to-chocolate-accent/20 relative overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      // Fallback to placeholder circle if image fails to load
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-chocolate-secondary to-chocolate-accent/20 flex items-center justify-center" style={{display: 'none'}}>
+                    <div className="w-16 h-16 bg-chocolate-accent rounded-full flex items-center justify-center">
+                      <span className="text-chocolate-primary font-bold text-xl">
+                        {product.name.charAt(0)}
+                      </span>
+                    </div>
                   </div>
                 </div>
                 <div className="p-6">
@@ -70,7 +82,7 @@ const Home = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="font-bold text-chocolate-accent text-lg">
-                      ₹{product.price}
+                      BD {product.price}
                     </span>
                     <Link to="/products">
                       <Button size="sm" variant="outline" className="border-chocolate-accent text-chocolate-accent hover:bg-chocolate-accent hover:text-chocolate-primary">

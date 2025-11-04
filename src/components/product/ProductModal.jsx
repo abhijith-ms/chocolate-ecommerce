@@ -94,7 +94,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                   <div>
                     <span className="text-sm text-chocolate-primary/70">Price per piece</span>
                     <div className="font-bold text-2xl sm:text-3xl text-chocolate-accent">
-                      ₹{product.price}
+                      BD {product.price}
                     </div>
                   </div>
                   {isInCart(product.id) && (
@@ -137,7 +137,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
                   
                   {quantity > 1 && (
                     <p className="text-sm text-chocolate-primary/70 mt-2">
-                      Total: ₹{product.price * quantity}
+                      Total: BD {(product.price * quantity).toFixed(2)}
                     </p>
                   )}
                 </div>

@@ -80,7 +80,7 @@ const ProductList = ({ onEditProduct }) => {
                     </p>
                     <div className="flex items-center gap-4 mt-2">
                       <span className="font-bold text-chocolate-accent">
-                        ₹{product.price}
+                        BD {product.price}
                       </span>
                       <span className="text-xs bg-chocolate-secondary px-2 py-1 rounded-full text-chocolate-primary">
                         {product.category}

@@ -18,14 +18,14 @@ export const generateWhatsAppURL = (message) => {
  * @returns {string} - Formatted message
  */
 export const formatSingleProductMessage = (product, quantity = 1) => {
-  const total = product.price * quantity;
+  const total = (product.price * quantity).toFixed(2);
   
   return `Hello! I'd like to order:
 
-🍫 *${product.name}*
-💰 Price: ₹${product.price} each
+🍽️ *${product.name}*
+💰 Price: BD ${product.price} each
 📦 Quantity: ${quantity}
-💳 Total: ₹${total}
+💳 Total: BD ${total}
 
 📝 Description: ${product.description}
 
@@ -40,11 +40,11 @@ Please confirm availability and delivery details. Thank you!`;
  */
 export const formatCartCheckoutMessage = (cartItems, total) => {
   const itemsList = cartItems.map((item, index) => {
-    const itemTotal = item.product.price * item.quantity;
+    const itemTotal = (item.product.price * item.quantity).toFixed(2);
     return `${index + 1}. *${item.product.name}*
    - Quantity: ${item.quantity}
-   - Price: ₹${item.product.price} each
-   - Subtotal: ₹${itemTotal}`;
+   - Price: BD ${item.product.price} each
+   - Subtotal: BD ${itemTotal}`;
   }).join('\n\n');
 
   const itemCount = cartItems.reduce((count, item) => count + item.quantity, 0);
@@ -55,7 +55,7 @@ ${itemsList}
 
 📊 *Order Summary:*
 🛍️ Total Items: ${itemCount}
-💳 *Grand Total: ₹${total}*
+💳 *Grand Total: BD ${total.toFixed(2)}*
 
 Please confirm availability and provide delivery details. Thank you!`;
 };

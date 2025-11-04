@@ -1,16 +1,16 @@
 /**
- * Format price in Indian Rupees
+ * Format price in Bahrain Dinar
  * @param {number} amount - Amount to format
  * @param {boolean} showSymbol - Whether to show currency symbol (default: true)
  * @returns {string} - Formatted price
  */
 export const formatPrice = (amount, showSymbol = true) => {
   if (typeof amount !== 'number' || isNaN(amount)) {
-    return showSymbol ? '₹0' : '0';
+    return showSymbol ? 'BD 0' : '0';
   }
 
-  const formatted = amount.toLocaleString('en-IN');
-  return showSymbol ? `₹${formatted}` : formatted;
+  const formatted = amount.toFixed(2);
+  return showSymbol ? `BD ${formatted}` : formatted;
 };
 
 /**
