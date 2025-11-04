@@ -6,7 +6,7 @@ import { Button } from '../ui/button';
 import { useState } from 'react';
 
 const Navbar = () => {
-  const { getCartItemCount, toggleCart } = useCart();
+  const { getCartItemCount } = useCart();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
@@ -57,19 +57,20 @@ const Navbar = () => {
           {/* Cart and Mobile Menu */}
           <div className="flex items-center space-x-4">
             {/* Cart Button */}
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={toggleCart}
-              className="relative p-2 text-chocolate-primary hover:text-chocolate-accent"
-            >
-              <ShoppingCart className="h-6 w-6" />
-              {cartItemCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-chocolate-accent text-chocolate-primary text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
-                  {cartItemCount}
-                </span>
-              )}
-            </Button>
+            <Link to="/cart">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="relative p-2 text-chocolate-primary hover:text-chocolate-accent"
+              >
+                <ShoppingCart className="h-6 w-6" />
+                {cartItemCount > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-chocolate-accent text-chocolate-primary text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                    {cartItemCount}
+                  </span>
+                )}
+              </Button>
+            </Link>
 
             {/* Mobile Menu Button */}
             <Button
