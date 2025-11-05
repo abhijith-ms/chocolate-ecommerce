@@ -151,7 +151,7 @@ const Admin = () => {
               View Live Store
             </button>
             <button
-              onClick={() => window.open('https://wa.me/919895905758', '_blank')}
+              onClick={() => window.open('https://wa.me/97337306606', '_blank')}
               className="bg-green-50 text-green-700 px-4 py-2 rounded-lg hover:bg-green-100 transition-colors text-sm font-medium"
             >
               WhatsApp Support

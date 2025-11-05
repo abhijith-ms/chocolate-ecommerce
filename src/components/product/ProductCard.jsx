@@ -107,7 +107,7 @@ const ProductCard = ({ product, onViewDetails }) => {
         {/* Price */}
         <div className="flex items-center justify-between mb-4">
           <span className="font-bold text-xl sm:text-2xl text-chocolate-accent">
-            BD {product.price}
+            BHD. {product.price.toFixed(3)}
           </span>
           <span className="text-xs sm:text-sm text-chocolate-primary/60">
             per piece

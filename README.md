@@ -90,7 +90,7 @@ The build artifacts will be stored in the `dist/` directory.
 
 ## 📧 Contact
 
-- **WhatsApp**: +91 98959 05758
+- **WhatsApp**: +973 3730 6606
 - **Email**: info@alicompany.com
 - **Location**: Manama, Bahrain
 

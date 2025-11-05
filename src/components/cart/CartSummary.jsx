@@ -40,7 +40,7 @@ const CartSummary = () => {
       <div className="space-y-3 mb-6">
         <div className="flex justify-between items-center text-chocolate-primary">
           <span>Items ({itemCount})</span>
-          <span>BD {total.toFixed(2)}</span>
+          <span>BHD. {total.toFixed(3)}</span>
         </div>
         
         <div className="flex justify-between items-center text-chocolate-primary">
@@ -52,7 +52,7 @@ const CartSummary = () => {
         
         <div className="flex justify-between items-center text-lg font-bold text-chocolate-primary">
           <span>Total</span>
-          <span className="text-chocolate-accent">BD {total.toFixed(2)}</span>
+          <span className="text-chocolate-accent">BHD. {total.toFixed(3)}</span>
         </div>
       </div>
 

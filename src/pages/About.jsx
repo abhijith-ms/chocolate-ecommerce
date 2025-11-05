@@ -26,8 +26,8 @@ const About = () => {
     {
       icon: MessageCircle,
       title: 'WhatsApp',
-      value: '+91 98959 05758',
-      link: 'https://wa.me/919895905758',
+      value: '+973 3730 6606',
+      link: 'https://wa.me/97337306606',
       description: 'Quick orders and support'
     },
     {
@@ -237,7 +237,7 @@ const About = () => {
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-chocolate-primary px-8 py-3"
-                onClick={() => window.open('https://wa.me/919895905758', '_blank')}
+                onClick={() => window.open('https://wa.me/97337306606', '_blank')}
               >
                 <MessageCircle className="h-5 w-5 mr-2" />
                 Contact Us

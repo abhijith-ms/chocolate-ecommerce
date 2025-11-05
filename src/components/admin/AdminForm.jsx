@@ -135,17 +135,17 @@ const AdminForm = ({ product, onCancel, mode = 'create' }) => {
           {/* Price */}
           <div>
             <Label htmlFor="price" className="text-chocolate-primary font-medium">
-              Price (BD) *
+              Price (BHD) *
             </Label>
             <Input
               id="price"
               name="price"
               type="number"
               min="0"
-              step="0.01"
+              step="0.001"
               value={formData.price}
               onChange={handleChange}
-              placeholder="e.g., 1.8"
+              placeholder="e.g., 1.800"
               className="mt-1"
               required
             />

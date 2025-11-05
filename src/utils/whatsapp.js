@@ -1,5 +1,5 @@
 // WhatsApp utility functions
-const WHATSAPP_NUMBER = '919895905758';
+const WHATSAPP_NUMBER = '97337306606';
 
 /**
  * Generate WhatsApp URL with encoded message
@@ -18,14 +18,14 @@ export const generateWhatsAppURL = (message) => {
  * @returns {string} - Formatted message
  */
 export const formatSingleProductMessage = (product, quantity = 1) => {
-  const total = (product.price * quantity).toFixed(2);
+  const total = (product.price * quantity).toFixed(3);
   
   return `Hello! I'd like to order:
 
 🍽️ *${product.name}*
-💰 Price: BD ${product.price} each
+💰 Price: BHD. ${product.price.toFixed(3)} each
 📦 Quantity: ${quantity}
-💳 Total: BD ${total}
+💳 Total: BHD. ${total}
 
 📝 Description: ${product.description}
 
@@ -40,11 +40,11 @@ Please confirm availability and delivery details. Thank you!`;
  */
 export const formatCartCheckoutMessage = (cartItems, total) => {
   const itemsList = cartItems.map((item, index) => {
-    const itemTotal = (item.product.price * item.quantity).toFixed(2);
+    const itemTotal = (item.product.price * item.quantity).toFixed(3);
     return `${index + 1}. *${item.product.name}*
    - Quantity: ${item.quantity}
-   - Price: BD ${item.product.price} each
-   - Subtotal: BD ${itemTotal}`;
+   - Price: BHD. ${item.product.price.toFixed(3)} each
+   - Subtotal: BHD. ${itemTotal}`;
   }).join('\n\n');
 
   const itemCount = cartItems.reduce((count, item) => count + item.quantity, 0);
@@ -55,7 +55,7 @@ ${itemsList}
 
 📊 *Order Summary:*
 🛍️ Total Items: ${itemCount}
-💳 *Grand Total: BD ${total.toFixed(2)}*
+💳 *Grand Total: BHD. ${total.toFixed(3)}*
 
 Please confirm availability and provide delivery details. Thank you!`;
 };

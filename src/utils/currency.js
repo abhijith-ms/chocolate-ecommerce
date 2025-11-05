@@ -6,11 +6,11 @@
  */
 export const formatPrice = (amount, showSymbol = true) => {
   if (typeof amount !== 'number' || isNaN(amount)) {
-    return showSymbol ? 'BD 0' : '0';
+    return showSymbol ? 'BHD. 0.000' : '0.000';
   }
 
-  const formatted = amount.toFixed(2);
-  return showSymbol ? `BD ${formatted}` : formatted;
+  const formatted = amount.toFixed(3);
+  return showSymbol ? `BHD. ${formatted}` : formatted;
 };
 
 /**

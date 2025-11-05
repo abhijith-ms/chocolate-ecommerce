@@ -82,7 +82,7 @@ const Home = () => {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="font-bold text-chocolate-accent text-lg">
-                      BD {product.price}
+                      BHD. {product.price.toFixed(3)}
                     </span>
                     <Link to="/products">
                       <Button size="sm" variant="outline" className="border-chocolate-accent text-chocolate-accent hover:bg-chocolate-accent hover:text-chocolate-primary">
